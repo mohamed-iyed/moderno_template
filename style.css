@@ -320,7 +320,7 @@ header .info-text button:hover {
     z-index: 1;
     top: 0;
 }
-.overlay::before {
+.iframe .overlay::before {
     content: '';
     position: absolute;
     top: 50%;
@@ -338,7 +338,13 @@ header .info-text button:hover {
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
 }
-.overlay::after {
-    content:'We Are Here';
+.iframe .overlay::after {
+    content: 'We Are Here';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 14px;
     
 }
